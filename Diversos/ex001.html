@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background: rgb(219, 192, 182);
+            color: black;
+
+            font: normal 18pt Arial;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado!</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript!</p>
+    <div class='msg'>Clica nessa porra</div>
+    <script>
+        // let corpo = document.body
+
+        // getElementsByTagName(↓)
+        // let p1 = document.getElementsByTagName('p')[1]
+
+        // getElementsByName(↓)
+        // let d = document.getElementsByName('msg')[0]
+        // d.innerText = 'Vai pra pqp'
+        // d.style.background = 'white'
+
+        // getElementsById(↓)
+        // let d = document.getElementById('msg')
+        // d.style.background = 'white'
+        // d.innerText = 'Estou aguardando'
+        // // window.document.getElementById('msg').innerText = 'Ola'
+
+        // getElementsByClassName(↓)
+        // let d = document.getElementsByClassName('msg')[0]
+        // d.innerText = 'Vai te tomar no cu caralho'
+        // d.style.background = 'white'
+
+        // // querySelector(↓)
+        let d = document.querySelector('div.msg')
+        d.innerText = 'Vai tomar no cu'
+        d.style.background = 'white'
+
+    </script>
+</body>
+
+</html>

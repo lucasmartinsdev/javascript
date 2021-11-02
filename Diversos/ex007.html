@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        h1 {
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        body {
+            font: normal 18pt Arial;
+            border-color: darkslategray;
+            color: whitesmoke;
+            background-color: teal;
+        }
+
+        input {
+            margin-top: 20px;
+            background-position: center;
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+
+        div {
+            margin-top: 20px;
+            font: normal 18pt Arial;
+            color: rgb(0, 0, 0)
+        }
+    </style>
+</head>
+
+<body>
+    <!-- section*5#secao$>article.conteudo>h1*p{Texto} -->
+    <section id="secao1">
+        <article class="conteudo">
+            <h1></h1>
+            <p>Texto</p>
+        </article>
+    </section>
+    <section id="secao2">
+        <article class="conteudo">
+            <h1></h1>
+            <p>Texto</p>
+        </article>
+    </section>
+    <section id="secao3">
+        <article class="conteudo">
+            <h1></h1>
+            <p>Texto</p>
+        </article>
+    </section>
+    <section id="secao4">
+        <article class="conteudo">
+            <h1></h1>
+            <p>Texto</p>
+        </article>
+    </section>
+    <section id="secao5">
+        <article class="conteudo">
+            <h1></h1>
+            <p>Texto</p>
+        </article>
+    </section>
+
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+
+    <div>
+        <p><a href=""></a></p>
+    </div>
+
+    <div>
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <p>Conteudo</p>
+
+    <!-- nav.menu>ul>li -->
+    <!-- nav.menu>ul>li*5>a -->
+    <!-- nav.menu>ul>li#item$*5>a -->
+    <nav class="menu">
+        <ul>
+            <li id="item1"><a href="http://">home</a></li>
+            <li id="item2"><a href="http://">perfil</a></li>
+            <li id="item3"><a href="https://www.youtube.com/watch?v=eAm7q57yDnA&ab_channel=LucasMartins">meu video</a>
+            </li>
+            <li id="item4"><a href="http://">fon</a></li>
+            <li id="item5"><a href="http://">macaco</a></li>
+        </ul>
+    </nav>
+
+
+    <script>
+        function somar() {
+            let tn1 = document.getElementById('txtn1')
+            let tn2 = document.querySelector('input#txtn2')
+            let res = document.getElementById('res')
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}<strong>`
+        }
+    </script>
+</body>
+
+</html>

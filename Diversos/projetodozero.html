@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Projeto</title>
+    <style>
+        body {
+            background: rgb(212, 156, 148);
+            /* position: relative;
+            left: 300px; */
+        }
+
+        h1 {
+            font: normal 30px Arial;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border-style: inset;
+            border-width: unset;
+            border-color: rgb(148, 148, 148);
+            width: 250px;
+            margin-top: 0%;
+            background: darkgray;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-style: dashed;
+            position: relative;
+            left: 355px;
+        }
+
+        
+        
+        /* h2#soma {
+            text-align: center;
+            font: normal 13pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: black;
+            background: rgb(212, 156, 148);
+            width: 250px;
+            position: relative;
+            left: 100px;
+            
+        } */
+        
+        /* div#res {
+            margin-top: 20px;
+            font: normal 14pt Arial;
+            color: black;
+            background: rgb(216, 210, 210);
+            width: 350px;
+            position: relative;
+            left: 45px;
+            text-align: center;
+            border-style: solid;
+            border-width: medium;
+            
+        } */
+        
+        /* input#txn2 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        } */
+        
+        /* input#t1 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        } */
+        
+        /* h2#multi {
+            text-align: center;
+            font: normal 13pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: black;
+            background: rgb(212, 156, 148);
+            width: 250px;
+            position: relative;
+            left: 100px;
+        } */
+        
+        /* div#rm {
+            margin-top: 20px;
+            font: normal 14pt Arial;
+            color: black;
+            background: rgb(216, 210, 210);
+            width: 350px;
+            position: relative;
+            left: 45px;
+            text-align: center;
+            border-style: solid;
+            border-width: medium;
+            
+        } */
+        
+        /* input#txn3 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        } */
+        
+        /* input#txn4 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        } */
+        
+        /* input#t2 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        } */
+        
+        
+        /* input#txn6 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 625px;
+        } */
+        
+        /* input#t3 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        } */
+        
+        /* h2#divid {
+            text-align: center;
+            font: normal 13pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: black;
+            background: rgb(212, 156, 148);
+            width: 250px;
+            position: relative;
+            left: 614px;
+            
+        } */
+        
+        /* div#rst {
+            margin-top: 20px;
+            font: normal 14pt Arial;
+            color: black;
+            background: rgb(216, 210, 210);
+            width: 350px;
+            position: relative;
+            left: 559px;
+            text-align: center;
+            border-style: solid;
+            border-width: medium;
+        } */
+        
+        /* input#txn7 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        }
+        
+        input#txn8 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        }
+        
+        input#t4 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 111px;
+        } */
+        
+        h2#soma,
+        h2#multi {
+            text-align: center;
+            font: normal 13pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: black;
+            background: rgb(212, 156, 148);
+            width: 250px;
+            position: relative;
+            left: 100px;
+            
+        }
+        h2#menos,
+        h2#divid {
+            text-align: center;
+            font: normal 13pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: black;
+            background: rgb(212, 156, 148);
+            width: 250px;
+            position: relative;
+            left: 614px;
+            
+        }
+        
+        div#res,
+        div#rm {
+            margin-top: 20px;
+            font: normal 14pt Arial;
+            color: black;
+            background: rgb(216, 210, 210);
+            width: 350px;
+            position: relative;
+            left: 45px;
+            text-align: center;
+            border-style: solid;
+            border-width: medium;
+        }
+        div#rtd,
+        div#rst {
+            margin-top: 20px;
+            font: normal 14pt Arial;
+            color: black;
+            background: rgb(216, 210, 210);
+            width: 350px;
+            position: relative;
+            left: 559px;
+            text-align: center;
+            border-style: solid;
+            border-width: medium;
+        }
+
+        input#txn1,
+        input#txn2,
+        input#t1,
+        input#txn3,
+        input#txn4,
+        input#t2 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 55px;
+        }
+
+        input#txn5,
+        input#txn6,
+        input#t3,
+        input#txn7,
+        input#txn8,
+        input#t4 {
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 573px;
+        }
+        h2#expoente {
+            text-align: center;
+            font: normal 13pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+            
+            color: black;
+            background: rgb(212, 156, 148);
+            width: 250px;
+            position: relative;
+            left: 357px;
+        }
+
+        div#rest {
+            margin-top: 20px;
+            font: normal 14pt Arial;
+            color: black;
+            background: rgb(216, 210, 210);
+            width: 350px;
+            position: relative;
+            left: 302px;
+            text-align: center;
+            border-style: solid;
+            border-width: medium;
+        }
+
+        input#txn9, input#txn10, input#t5{
+            text-align: center;
+            font: normal 15pt Arial;
+            -webkit-text-stroke-width: 0.7px;
+            -webkit-text-stroke-color: black;
+
+            color: rgb(0, 0, 0);
+            background: rgb(241, 206, 196);
+            width: 100px;
+            position: relative;
+            left: 310px;
+        }
+
+       
+
+
+
+
+
+
+
+
+
+        strong#stg1,
+        strong#stg2 {
+            position: relative;
+            left: 55px;
+
+        }
+
+        strong#stg3,
+        strong#stg4 {
+            position: relative;
+            left: 573px;
+        }
+        strong#stg5 {
+            position:relative;
+            left: 310px
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Calculadora Funcional</h1>
+        <br>
+        <br>
+
+    </div>
+
+    <div>
+
+
+        <h2 id="soma">Adicione valores para somar</h2>
+        <input type="number" name="txn1" id="txn1"> <strong id="stg1">+</strong>
+        <input type="number" name="txn2" id="txn2">
+        <input type="button" id="t1" value="=" onclick="somar()">
+        <div id='res'>Resultado</div>
+        <br>
+    </div>
+
+    <div>
+
+        <h2 id='multi'>Adicione valores para multiplicar</h2>
+        <input type="number" name="txn3" id="txn3"> <strong id="stg2">x</strong>
+        <input type="number" name="txn4" id="txn4">
+        <input type="button" id="t2" value="=" onclick="multiplicar()">
+        <div id='rm'>Resultado</div>
+        <br>
+    </div>
+
+    <div>
+        <h2 id="menos">Adicione valores para subtrair</h2>
+
+        <input type="number" name="txn5" id="txn5"> <strong id="stg3">-</strong>
+        <input type="number" name="txn6" id="txn6">
+        <input type="button" id="t3" value="=" onclick="subtrair()">
+        <div id='rtd'>Resultado</div>
+        <br>
+    </div>
+
+    <div>
+
+        <h2 id="divid">Adicione valores para dividir</h2>
+        <input type="number" name="txn7" id="txn7"> <strong id="stg4">/</strong>
+        <input type="number" name="txn8" id="txn8">
+        <input type="button" id="t4" value="=" onclick="dividir()">
+        <div id='rst'>Resultado</div>
+        <br>
+    </div>
+    <div>
+        <h2 id="expoente">Adicione valores para exponenciar</h2>
+        <input type="number" name="txn9" id="txn9"> <strong id="stg5">**</strong>
+        <input type="number" name="txn10" id="txn10">
+        <input type="button" id="t5" value="=" onclick="exp()">
+        <div id='rest'>Resultado</div>
+        <br>
+    </div>
+
+</body>
+<script>
+    function somar() {
+        let tn1 = document.getElementById('txn1')
+        let tn2 = document.getElementById('txn2')
+        let res = document.querySelector('div#res')
+        let n1 = Number(tn1.value)
+        let n2 = Number(tn2.value)
+        let s = n1 + n2
+        res.innerHTML = `O resultado da soma entre ${n1} e ${n2} é igual a ${s}.`
+    }
+    function multiplicar() {
+        let tn1 = document.getElementById('txn3')
+        let tn2 = document.getElementById('txn4')
+        let rm = document.querySelector('div#rm')
+        let n1 = Number(tn1.value)
+        let n2 = Number(tn2.value)
+        let s = n1 * n2
+        rm.innerHTML = `O resultado da multiplicação entre ${n1} e ${n2} é igual a ${s}.`
+    }
+    function subtrair() {
+        let tn1 = document.getElementById('txn5')
+        let tn2 = document.getElementById('txn6')
+        let rtd = document.querySelector('div#rtd')
+        let n1 = Number(tn1.value)
+        let n2 = Number(tn2.value)
+        let s = n1 - n2
+        rtd.innerHTML = `O resultado da subtração entre ${n1} e ${n2} é igual a ${s}.`
+    }
+    function dividir() {
+        let tn1 = document.getElementById('txn7')
+        let tn2 = document.getElementById('txn8')
+        let rst = document.querySelector('div#rst')
+        let n1 = Number(tn1.value)
+        let n2 = Number(tn2.value)
+        let s = n1 / n2
+        rst.innerHTML = `O resultado da divisão entre ${n1} e ${n2} é igual a ${s}`
+    }
+    function exp() {
+        let tn1 = document.getElementById('txn9')
+        let tn2 = document.getElementById('txn10')
+        let rest = document.querySelector('div#rest')
+        let n1 = Number(tn1.value)
+        let n2 = Number(tn2.value)
+        let s = n1 ** n2
+        rest.innerHTML = `O resultado de ${n1} ao ${n2} é igual a ${s}.`
+    }
+
+</script>
+
+</html>
